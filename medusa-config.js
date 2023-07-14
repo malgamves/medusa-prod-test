@@ -42,18 +42,18 @@ const plugins = [
       upload_dir: "uploads",
     },
   },
-  {  // To enable the admin plugin, uncomment the following lines and run `yarn add @medusajs/admin`
+  // {  // To enable the admin plugin, uncomment the following lines and run `yarn add @medusajs/admin`
 
-    resolve: "@medusajs/admin",
-    /** @type {import('@medusajs/admin').PluginOptions} */
-    options: {
-      autoRebuild: true,
-    },
-  },
+  //   resolve: "@medusajs/admin",
+  //   /** @type {import('@medusajs/admin').PluginOptions} */
+  //   options: {
+  //     autoRebuild: true,
+  //   },
+  // },
 ];
 
 const modules = {
-  /*eventBus: {
+  eventBus: {
     resolve: "@medusajs/event-bus-redis",
     options: {
       redisUrl: REDIS_URL
@@ -64,7 +64,7 @@ const modules = {
     options: {
       redisUrl: REDIS_URL
     }
-  },*/
+  },
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
